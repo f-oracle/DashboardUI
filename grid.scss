@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px){
+    html{
+        overflow: hidden;
+    }
+   body{
+    font-size: calc(10px + (17 - 10) * ((100vw - 300px) / (1600 - 300)));
+   }
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  background-color: #0c0b0f;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(10px + (19 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.body-contain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  min-height: 100%;
+}
+
+.sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.sidebar__text-div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.sidebar__text-div h4 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #f3f3f3;
+}
+
+.sidebar__text-div strong {
+  color: #f5f5fd;
+  letter-spacing: 3px;
+  font-size: larger;
+}
+
+.sidebar__text-div span {
+  font-size: 13px;
+  color: #6d6d70;
+}
+
+.sidebar__link-div {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  bottom: 20%;
+}
+
+.sidebar__link-div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  gap: 0 5px;
+  text-decoration: none;
+  color: #bebec6;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: red;
+  margin: 10px 0;
+}
+
+.sidebar__foot {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  bottom: 200px;
+}
+
+.support-div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(#17373a), to(#161620));
+  background-image: linear-gradient(to left, #17373a, #161620);
+  width: 250px;
+  margin: 40px 0;
+  font-size: 15px;
+  padding: 30px 0;
+  border-radius: 30px;
+  border-right: 2px solid #19897b;
+}
+
+.support-div span {
+  font-size: 20px;
+  color: #f6f5ff;
+  font-weight: bold;
+}
+
+.support-div p {
+  color: #f6f5ff;
+  font-size: 13px;
+}
+
+.main {
+  height: 100%;
+  background: blue;
+}
+
+.header {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__search {
+  width: 500px;
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header__search input {
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  background: #232229;
+  border: none;
+}
+
+.header__search input::-webkit-input-placeholder {
+  color: #838385;
+  font-size: 20px;
+}
+
+.header__search input:-ms-input-placeholder {
+  color: #838385;
+  font-size: 20px;
+}
+
+.header__search input::-ms-input-placeholder {
+  color: #838385;
+  font-size: 20px;
+}
+
+.header__search input::placeholder {
+  color: #838385;
+  font-size: 20px;
+}
+
+.header label {
+  position: relative;
+}
+
+.header label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.header__icons {
+  width: 500px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 30px;
+}
+
+.svg-space {
+  background: #302f36;
+  border-radius: 30px;
+  height: 40px;
+  width: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+/*# sourceMappingURL=dashboard.css.map */
