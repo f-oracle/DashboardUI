@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&family=Source+Sans+Pro:wght@900&display=swap');
 
 *,
 *:before,
@@ -28,7 +29,6 @@ body {
   grid-template-rows: 1fr 3fr;
   align-items: center;
   min-height: 100%;
-  // background: red;
 
   &__text-div {
     display: grid;
@@ -113,13 +113,16 @@ body {
 }
 .main {
   height: 100%;
-  background: blue;
+
+  &__content {
+    min-height: 850px;
+    width: 100%;
+  }
 }
 
 .header {
-  height: 80px;
+  height: 100px;
   display: flex;
-  // grid-template-columns: repeat(2 , 1fr);
   align-items: center;
   justify-content: space-evenly;
 
@@ -131,28 +134,20 @@ body {
 
     & input {
       width: 400px;
-      height: 50px;
+      height: 40px;
       border-radius: 30px;
       background: #232229;
       border: none;
 
       &::placeholder {
         color: rgba(131, 131, 133, 255);
-        // text-align: center;
-        font-size: 20px;
-
-
+        font-size: 15px;
       }
-
     }
-
-
   }
-
 
   label {
     position: relative;
-
   }
   label:before {
     content: "";
@@ -161,27 +156,127 @@ body {
     top: 0;
     bottom: 0;
     width: 30px;
-    background: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-
+    background: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E")
+      center / contain no-repeat;
   }
-
-
 
   &__icons {
     width: 500px;
     height: 60px;
-    // background: black;
     display: flex;
     justify-content: end;
     gap: 30px;
   }
 }
-.svg-space{
-  //  padding:3px;
-   background: #302f36;
-   border-radius: 30px;
-   height: 40px;
-   width: 40px;
-   display: grid;
-   place-items: center;
+.svg-space {
+  display: grid;
+  place-items: center;
+  background: #302f36;
+  border-radius: 30px;
+  height: 40px;
+  width: 40px;
+
+}
+
+.content {
+  min-height: 800px;
+  width: 90%;
+  background: #232229;
+  border-radius: 30px;
+  margin: 0 auto;
+  &__div1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  // background: blue;
+  height: 100px;
+    & h3 {
+      color: #fcfcfc;
+      padding: 30px;
+    }
+    & a{
+      display: flex;
+      place-items: center;
+      text-decoration: none;
+      color: #ebebec;
+      font-size: 13px;
+      border: 1px solid #ebebec;
+      padding: 6px 8px;
+      border-radius: 10px;
+      text-transform: capitalize;
+    }
+  }
+  &__div2{
+    // background: red;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    place-content: center;
+    // gap: 0 200px;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+.info-contain1{
+  height: 200px;
+  width: 300px;
+  // background: #19897b;
+  border-radius: 30px;
+  // background-image: linear-gradient(to left, #3e3323, #161620);
+  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #ba8a47 100%);
+  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #ba8a47 100%);
+  border-right: 1px solid #cd984d;
+  line-height: 1px;
+  padding: 30px 0px 0px 20px;
+
+}
+.info-contain2{
+  height: 200px;
+  width: 300px;
+  // background: #19897b;
+  border-radius: 30px;
+  // background-image: linear-gradient(to left, #3e3323, #161620);
+  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1d3438 60%, #1d3438 100%, #1d3438 20%, #218e80 100%);
+  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #218e80 100%);
+  border-right: 1px solid #218e80;
+  line-height: 1px;
+  padding: 30px 0px 0px 20px;
+}
+.info-contain3{
+  height: 200px;
+  width: 300px;
+  // background: #19897b;
+  border-radius: 30px;
+  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #9a5450 100%);
+  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #9a5450 100%);
+  border-right: 1px solid #9a5450;
+  line-height: 3px;
+  padding: 30px 0px 0px 20px;
+}
+.info-text{
+  font-family: 'Source Sans Pro', sans-serif;
+ font-size: 40px;
+ font-weight: 900;
+ color: #fff;
+}
+.week-text{
+  font-size: 15px;
+  font-weight: 500;
+  color: #676669;
+}
+.bitcoin-svg{
+  background: #feba5b;
+  padding: 10px;
+  border-radius: 15px;
+}
+.ether-svg{
+  background: #22bfa8;
+  padding: 10px;
+  border-radius: 15px;
+}
+.letterN-svg{
+  background: #ee796b;
+  padding: 10px;
+  border-radius: 15px;
 }
