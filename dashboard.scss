@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&family=Source+Sans+Pro:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Nunito&family=Roboto:wght@700&family=Source+Sans+Pro:wght@900&display=swap");
 
 *,
 *:before,
@@ -15,7 +15,7 @@ body {
   height: 100%;
   background-color: rgba(12, 11, 15, 255);
   font-family: "Montserrat", sans-serif;
-  font-size: calc(10px + (19 - 10) * ((100vw - 300px) / (1600 - 300)));
+  // font-size: calc(10px + (19 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .body-contain {
@@ -124,7 +124,8 @@ body {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-right: 100px;
 
   &__search {
     width: 500px;
@@ -138,10 +139,15 @@ body {
       border-radius: 30px;
       background: #232229;
       border: none;
+      display: relative;
 
       &::placeholder {
-        color: rgba(131, 131, 133, 255);
-        font-size: 15px;
+        color: red;
+        font-size: 25px;
+        height: 50px;
+        width: 80px;
+        position: absolute;
+        left: 50px;
       }
     }
   }
@@ -175,27 +181,26 @@ body {
   border-radius: 30px;
   height: 40px;
   width: 40px;
-
 }
 
 .content {
   min-height: 800px;
-  width: 90%;
+  width: 93%;
   background: #232229;
   border-radius: 30px;
-  margin: 0 auto;
+
   &__div1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-  // background: blue;
-  height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 0px 20px;
+    height: 100px;
+
     & h3 {
       color: #fcfcfc;
       padding: 30px;
     }
-    & a{
+    & a {
       display: flex;
       place-items: center;
       text-decoration: none;
@@ -207,8 +212,8 @@ body {
       text-transform: capitalize;
     }
   }
-  &__div2{
-    // background: red;
+
+  &__div2 {
     width: 100%;
     height: 180px;
     display: flex;
@@ -218,64 +223,103 @@ body {
     padding: 0 30px;
   }
 }
-.info-contain1{
+
+.info-contain1 {
   height: 200px;
   width: 300px;
-  // background: #19897b;
   border-radius: 30px;
-  // background-image: linear-gradient(to left, #3e3323, #161620);
-  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #ba8a47 100%);
-  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #ba8a47 100%);
+  background: -moz-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1b1a1e 60%,
+    #382e23 100%,
+    #1b1a1e 20%,
+    #ba8a47 100%
+  );
+  background: -webkit-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1b1a1e 60%,
+    #382e23 100%,
+    #1b1a1e 20%,
+    #ba8a47 100%
+  );
   border-right: 1px solid #cd984d;
   line-height: 1px;
   padding: 30px 0px 0px 20px;
-
 }
-.info-contain2{
+.info-contain2 {
   height: 200px;
   width: 300px;
   // background: #19897b;
   border-radius: 30px;
-  // background-image: linear-gradient(to left, #3e3323, #161620);
-  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1d3438 60%, #1d3438 100%, #1d3438 20%, #218e80 100%);
-  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #218e80 100%);
+  background: -moz-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1d3438 60%,
+    #223331 100%,
+    #1d3438 20%,
+    #218e80 100%
+  );
+  background: -webkit-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1b1a1e 60%,
+    #223331 100%,
+    #1b1a1e 20%,
+    #218e80 100%
+  );
   border-right: 1px solid #218e80;
   line-height: 1px;
   padding: 30px 0px 0px 20px;
 }
-.info-contain3{
+.info-contain3 {
   height: 200px;
   width: 300px;
   // background: #19897b;
   border-radius: 30px;
-  background: -moz-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #9a5450 100%);
-  background: -webkit-linear-gradient(55deg, #1b1a1e 0%, #1b1a1e 60%, #382e23 100%, #1b1a1e 20%, #9a5450 100%);
+  background: -moz-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1b1a1e 60%,
+    #412b2a 100%,
+    #1b1a1e 20%,
+    #9a5450 100%
+  );
+  background: -webkit-linear-gradient(
+    55deg,
+    #1b1a1e 0%,
+    #1b1a1e 60%,
+    #412b2a 100%,
+    #1b1a1e 20%,
+    #9a5450 100%
+  );
   border-right: 1px solid #9a5450;
   line-height: 3px;
   padding: 30px 0px 0px 20px;
 }
-.info-text{
-  font-family: 'Source Sans Pro', sans-serif;
- font-size: 40px;
- font-weight: 900;
- color: #fff;
+.info-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
 }
-.week-text{
+.week-text {
   font-size: 15px;
   font-weight: 500;
   color: #676669;
 }
-.bitcoin-svg{
+.bitcoin-svg {
   background: #feba5b;
   padding: 10px;
   border-radius: 15px;
 }
-.ether-svg{
+.ether-svg {
   background: #22bfa8;
   padding: 10px;
   border-radius: 15px;
 }
-.letterN-svg{
+.letterN-svg {
   background: #ee796b;
   padding: 10px;
   border-radius: 15px;
