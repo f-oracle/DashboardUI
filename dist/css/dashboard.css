@@ -88,12 +88,79 @@ body {
   color: #bebec6;
 }
 
+.nav-item .dropdown-menu {
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.nav-item.show .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  max-height: 999px;
+  -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+}
+
+.dropdown-menu {
+  padding: 10px !important;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffff;
+  background: #302f36;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+          box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  position: relative;
+  right: 100px;
+  top: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  padding: 5px;
+  color: #fff;
+  border-radius: 2px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #fff;
+  background-color: rgba(129, 103, 169, 0.6);
+}
+
+.settings-svg {
+  position: relative;
+  right: 80px;
+  top: 10px;
+}
+
 input[type="checkbox"]:checked ~ #sidebarMenu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -101,7 +168,7 @@ input[type=checkbox] {
   display: none;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -163,7 +230,7 @@ input[type=checkbox] {
   margin-top: 3px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -171,7 +238,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -181,7 +248,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   margin-top: 8px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;

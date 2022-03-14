@@ -207,8 +207,10 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="svg-space">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="30px" height="20px"
+                        <div class="svg-space  nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+
+                                <svg class="settings-svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="30px" height="20px"
                                 viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffff"
                                     stroke="none">
@@ -218,7 +220,20 @@
                                         d="M2377 3655 c-162 -27 -353 -109 -479 -204 -381 -289 -536 -775 -392 -1231 168 -534 726 -859 1279 -745 582 121 965 677 870 1264 -98 603 -676 1017 -1278 916z m341 -301 c395 -81 671 -435 649 -834 -7 -130 -25 -199 -83 -315 -185 -374 -603 -544 -998 -406 -217 76 -411 270 -487 487 -144 413 48 847 451 1021 144 61 315 79 468 47z" />
                                 </g>
                             </svg>
+
+                            </a>
+
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+
                         </div>
+
+
 
 
                     </div>
@@ -313,6 +328,18 @@
 
     </div>
     <!-- body.ends -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+$('body').on('mouseenter mouseleave','.nav-item',function(e){
+			if ($(window).width() > 750) {
+				var _d=$(e.target).closest('.nav-item');_d.addClass('show');
+				setTimeout(function(){
+				_d[_d.is(':hover')?'addClass':'removeClass']('show');
+				},1);
+			}
+	});
+    </script>
 
 
 </body>
